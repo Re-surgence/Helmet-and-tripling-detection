@@ -7,7 +7,6 @@ rfdetr_dataset_dups/
 rfdetr_model/
 runs/
 output/
-results/
 train_rfdetr.py
 test-on-video.py
 formodel.py
