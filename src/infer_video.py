@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 from utils import get_tripling_detections
 
-def process_video(model_path='D:/Saigo-helmet-tripling/runs/detect\/train5/weights/best.pt', video_path="C:/User/Resurgence/Downloads/httest.mp4", output_path='outputs/output_video3.mp4', conf_threshold=0.75):
+def process_video(model_path='', video_path='', output_path='', conf_threshold=0.75): # Add your paths here
     """Process video for helmet-tripling detection."""
     model = YOLO(model_path)
     cap = cv2.VideoCapture(video_path)
@@ -57,4 +57,4 @@ def process_video(model_path='D:/Saigo-helmet-tripling/runs/detect\/train5/weigh
     print(f"Video complete. Output: {output_path}")
 
 if __name__ == '__main__':
-    process_video(video_path="C:/Users/Resurgence/Downloads/httest.mp4", conf_threshold=0.5)
+    process_video(video_path='', conf_threshold=0.5) # Add your video path here
